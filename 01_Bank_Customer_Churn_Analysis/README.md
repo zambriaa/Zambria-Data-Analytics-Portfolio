@@ -25,7 +25,8 @@ Excel (cleaning + feature engineering), SQL (segmentation + churn rates), Tablea
 - Churn by age group
 
 ## Tableau Dashboard
-![Bank Churn Dashboard](tableau/bank_churn_dashboard.png)
+![Bank Churn Dashboard](tableau/bank_churn_dashboard_top.png)
+
 
 ## Insights
 - Shorter-tenure customers show higher churn risk
