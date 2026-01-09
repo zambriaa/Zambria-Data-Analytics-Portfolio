@@ -1,48 +1,39 @@
 # Bank Customer Churn Analysis
 
 ## Problem
-Customer churn directly impacts bank revenue and long-term profitability.  
-The goal of this project is to identify the characteristics of customers most likely to churn and uncover patterns that can support retention strategies.
+Customer churn directly impacts bank revenue and profitability. This project identifies churn patterns and high-risk segments to support retention strategies.
 
 ## Data
-Source: Kaggle Bank Customer Churn Dataset  
-Rows: ~10,000 customers  
+- Source: Kaggle Bank Customer Churn Dataset
+- Size: ~10,000 customers
+- Target: churn (1 = churned, 0 = retained)
 
-Key variables:
-- Age
-- Tenure
-- Balance
-- Credit Score
-- Geography
-- Churn (1 = churned, 0 = retained)
+## Tools
+Excel (cleaning + feature engineering), SQL (segmentation + churn rates), Tableau (dashboard)
 
 ## Process
-1. Reviewed raw data for structure and quality
-2. Cleaned and standardized data in Excel
-3. Created analytical features such as age groups, tenure groups, and balance segments
-4. Prepared cleaned dataset for SQL analysis
-5. Visualized churn trends and risk segments in Tableau
+1. Cleaned and standardized dataset in Excel
+2. Created features: age_group, tenure_group, balance_flag
+3. Loaded clean CSV into SQLite and ran SQL analysis
+4. Built Tableau dashboard to visualize churn patterns
 
-## SQL
-SQL was used to:
-- Calculate churn rates by customer segment
-- Identify high-risk churn groups
-- Compare churn across tenure, balance, and age groups
-
-## Tableau
-The Tableau dashboard highlights:
+## Key Analysis (SQL)
 - Overall churn rate
-- Churn by age group and tenure
+- Churn rate by country
+- Churn by tenure group
 - Churn by balance segment
-- Profile of high-risk customers
+- Churn by age group
+
+## Tableau Dashboard
+![Bank Churn Dashboard](tableau/bank_churn_dashboard.png)
 
 ## Insights
-- Customers with shorter tenure have higher churn rates
-- High-balance customers show increased churn risk
-- Older customers are more likely to churn than younger customers
+- Shorter-tenure customers show higher churn risk
+- High-balance customers show elevated churn risk
+- Older age groups show higher churn than younger segments
 
 ## Recommendations
-- Implement early retention programs for new customers
-- Provide targeted incentives for high-balance customers
-- Develop personalized engagement strategies for high-risk age segments
+- Launch early-tenure retention program (first 90 days)
+- Create VIP retention outreach for high-balance customers
+- Target older segments with personalized engagement and loyalty incentives
 
