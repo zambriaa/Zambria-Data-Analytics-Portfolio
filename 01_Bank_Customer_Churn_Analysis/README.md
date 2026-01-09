@@ -26,6 +26,7 @@ Excel (cleaning + feature engineering), SQL (segmentation + churn rates), Tablea
 
 ## Tableau Dashboard
 ![Bank Churn Dashboard](tableau/bank_churn_dashboard_top.png)
+![Bank Churn Dashboard](tableau/bank_churn_dashboard_bottom.png)
 
 
 ## Insights
