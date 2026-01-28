@@ -6,20 +6,20 @@
 
 ## 📌 Project Overview
 
-Customer churn has a direct impact on revenue, growth, and long-term business performance. Understanding which customers are most likely to leave — and why — allows organizations to take proactive steps to improve retention.
+Customer churn has a direct impact on revenue, growth, and long-term business performance. Understanding which customers are most likely to leave — and why — allows organizations to prioritize retention efforts and reduce unnecessary losses.
 
-In this project, I analyzed customer-level data to identify key patterns associated with churn and to highlight high-risk customer segments. The goal was to translate raw data into clear insights that support data-driven retention strategies.
+In this project, I analyzed customer-level data to identify key patterns associated with churn and to highlight high-risk customer segments. The analysis focuses on behavioral, demographic, financial, and geographic factors that influence customer retention.
 
-This project demonstrates my ability to move from raw data → analysis → insights → business recommendations using core data analyst tools.
+This project demonstrates an end-to-end data analyst workflow: data preparation, analysis, insight generation, and business-focused recommendations.
 
 ---
 
 ## 🎯 Objectives
 
 - Identify the primary drivers of customer churn  
-- Analyze how tenure, demographics, financial factors, and geography relate to churn  
+- Analyze how tenure, age group, balance segment, and geography relate to churn  
 - Segment customers by churn risk  
-- Communicate insights clearly through visual analysis  
+- Communicate insights clearly using data visualization  
 - Provide actionable, data-backed recommendations  
 
 ---
@@ -33,7 +33,7 @@ This project demonstrates my ability to move from raw data → analysis → insi
 - Age group  
 - Account balance (segmented)  
 - Country  
-- Customer activity and demographic attributes  
+- Customer demographic attributes  
 - Churn indicator  
 
 ---
@@ -52,18 +52,18 @@ This project demonstrates my ability to move from raw data → analysis → insi
 
 ### Excel
 - Data cleaning and validation  
-- Creation of derived fields (age groups, balance segments)  
-- Exploratory analysis and pivot tables  
+- Creation of derived fields such as age groups and balance segments  
+- Exploratory analysis using pivot tables  
 
 ### SQL
-- Segmentation of churned vs retained customers  
+- Segmentation of churned vs. retained customers  
 - Aggregation of churn rates by tenure, age group, balance segment, and country  
 - Identification of high-risk customer segments  
 
 ### Tableau
 - Visual analysis of churn patterns  
 - Comparison of churn rates across customer segments  
-- Clear, business-focused charts to support insights  
+- Business-focused charts to support insight communication  
 
 ---
 
@@ -71,72 +71,72 @@ This project demonstrates my ability to move from raw data → analysis → insi
 
 ### 1️⃣ Customer Tenure Is Strongly Associated With Churn
 
-Customers with shorter tenure exhibit higher churn rates compared to long-tenured customers. The early stages of the customer lifecycle represent the highest churn risk, indicating that early engagement is critical for retention.
+Customers with shorter tenure churn at a significantly higher rate than long-tenured customers. The earliest stages of the customer lifecycle represent the highest retention risk, indicating that early engagement is critical for long-term retention.
 
-<img width="1175" height="202" alt="Churn Rate by Tenure" src="https://github.com/user-attachments/assets/ec2d69a5-774d-4d2e-a372-4de512f854d6" />
-
-
+![Churn by Tenure](visuals/churn_by_tenure.png)
 
 ---
 
 ### 2️⃣ Churn Rates Vary Across Age Groups
 
-Churn behavior differs by age group, with certain age segments showing noticeably higher churn rates. This suggests that demographic factors influence customer retention and that retention strategies may need to be tailored by age segment.
+Churn behavior differs meaningfully across age groups, with certain age segments demonstrating higher churn rates than others. This suggests that demographic factors influence retention behavior and that retention strategies may benefit from age-specific targeting.
 
-<img width="1173" height="231" alt="Churn Rate by Age Group" src="https://github.com/user-attachments/assets/d83f7f91-2397-4b1c-bd20-4848d54bc921" />
-
+![Churn by Age Group](visuals/churn_by_age_group.png)
 
 ---
 
-### 3️⃣ Balance Segment Impacts Churn Behavior
+### 3️⃣ Lower Balance Segments Show Higher Churn Risk
 
-Customers with lower account balances tend to churn at higher rates than customers with higher balances. This may indicate lower engagement or perceived value among lower-balance customers.
+Customers in lower balance segments churn at higher rates than customers with higher balances. This pattern suggests lower engagement or perceived value among lower-balance customers, presenting an opportunity for targeted engagement strategies.
 
-<img width="1146" height="218" alt="Churn Rate by Balance Segment" src="https://github.com/user-attachments/assets/2f3e4296-a1c7-4b38-8635-ce322160aeb2" />
-
-
+![Churn by Balance Segment](visuals/churn_by_balance_segment.png)
 
 ---
 
 ### 4️⃣ Geographic Differences Exist in Churn Rates
 
-Churn rates vary by country, suggesting that regional factors such as customer expectations, competition, or market conditions influence retention behavior.
+Churn rates vary by country, indicating that regional factors such as market conditions, competition, or customer expectations influence customer retention.
 
-<img width="1170" height="208" alt="Churn Rate by Country" src="https://github.com/user-attachments/assets/2d78314c-66fe-457e-a515-2ad974a35162" />
-
+![Churn by Country](visuals/churn_by_country.png)
 
 ---
 
 ## 💡 Recommendations
 
 1. **Improve early customer engagement**  
-   Focus retention efforts on newer customers through onboarding and early-touch engagement strategies.
+   Focus retention efforts on newer customers through structured onboarding and early engagement initiatives.
 
 2. **Develop segment-specific retention strategies**  
-   Tailor messaging and offers based on age group and balance segment rather than applying one-size-fits-all approaches.
+   Tailor retention approaches based on age group and balance segment rather than using one-size-fits-all solutions.
 
 3. **Prioritize high-risk balance segments**  
-   Monitor lower-balance customers more closely and explore incentives to increase engagement.
+   Monitor lower-balance customers more closely and introduce initiatives to increase engagement and perceived value.
 
 4. **Investigate regional churn drivers**  
    Use geographic churn patterns to guide localized retention strategies and deeper analysis.
 
 ---
 
+## ✅ Results Summary
+
+This analysis identifies clear, actionable churn risk segments based on tenure, demographics, financial engagement, and geography. The findings highlight where targeted retention efforts would likely deliver the highest return, enabling proactive and data-driven decision-making.
+
+---
+
 ## 📈 Business Value
 
-Implementing these insights could help organizations:
-- Reduce customer churn through earlier intervention  
-- Improve customer lifetime value  
+Applying these insights can help organizations:
+- Reduce customer churn through early intervention  
+- Increase customer lifetime value  
 - Allocate retention resources more effectively  
-- Make data-driven decisions around customer engagement  
+- Strengthen data-driven retention strategies  
 
 ---
 
 ## 🧠 What This Project Demonstrates
 
 - Ability to analyze customer behavior using real-world data  
-- Strong understanding of churn and retention concepts  
+- Strong understanding of churn and retention analytics  
 - Proficiency with Excel, SQL, and Tableau  
 - Clear communication of insights and business recommendations  
 
@@ -157,3 +157,4 @@ Future enhancements could include:
 - Predictive churn modeling  
 - Deeper analysis of customer activity behavior  
 - Testing targeted retention strategies  
+
