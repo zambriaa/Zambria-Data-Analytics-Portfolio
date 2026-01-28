@@ -1,55 +1,73 @@
-Zambria Morris — Data Analytics Portfolio
+# Zambria Morris — Data Analytics Portfolio  
+**Data Analyst | SQL • Excel • Tableau**
 
-Data Analyst | SQL • Excel • Tableau
+---
 
-I am a data analyst focused on turning raw data into clear, actionable insights that help businesses understand customer behavior, reduce losses, and make better decisions. My work centers on building clean datasets, writing analytical SQL, and delivering visual dashboards that support real business outcomes.
+## 👩🏽‍💻 About Me
 
-⸻
+I am a data analyst focused on transforming raw data into clear, actionable insights that support business decision-making. My work centers on understanding customer and operational behavior, identifying risk and opportunity, and communicating findings in a way that stakeholders can act on.
 
-Tools & Skills
-	•	SQL (data cleaning, joins, aggregations, CTEs)
-	•	Excel (data preparation, formulas, validation)
-	•	Tableau (dashboards, KPI tracking, storytelling)
-	•	Data analysis & business insights
+I specialize in building clean datasets, writing analytical SQL, and delivering visual dashboards that support measurable business outcomes.
 
-⸻
+---
 
-Flagship Project
+## 🛠 Tools & Skills
 
-01 — Bank Customer Churn Analysis
+- **SQL:** data cleaning, joins, aggregations, CTEs  
+- **Excel:** data preparation, validation, formulas, exploratory analysis  
+- **Tableau:** dashboards, KPI tracking, data storytelling  
+- **Analytics Focus:** segmentation, retention analysis, performance insights  
 
-Business problem
-Banks lose millions when customers leave. This project analyzes customer behavior to identify which customers are most likely to churn and why.
+---
 
-What I did
-	•	Cleaned and prepared customer data using Excel and SQL
-	•	Analyzed churn drivers such as tenure, product usage, and account activity
-	•	Built an interactive Tableau dashboard to visualize churn risk and customer segments
+## 📁 Projects
 
-Tools used
-SQL, Excel, Tableau
+### Bank Customer Churn Analysis
 
-Key focus
-Identifying high-risk customer segments and providing insights to help reduce churn and improve retention.
+**Business context**  
+Customer churn directly impacts revenue and long-term growth. This project analyzes customer behavior to identify churn risk and the factors that contribute to customer attrition.
 
-Project files
-GitHub folder:
-https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/tree/main/01_Bank_Customer_Churn_Analysis
+**Work performed**
+- Cleaned and prepared customer data using Excel and SQL  
+- Analyzed churn drivers including tenure, age group, balance segment, and geography  
+- Built a Tableau dashboard to visualize churn patterns and high-risk customer segments  
 
-Tableau Dashboard
-https://public.tableau.com/app/profile/zambria.morris/viz/bank_churn_dashboard_17679609808390/Dashboard1
+**Key outcome**  
+Identified customer segments with elevated churn risk and provided insights to support targeted retention strategies.
 
-⸻
+**Project links**
+- **GitHub files:**  
+  https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/tree/main/01_Bank_Customer_Churn_Analysis  
 
-Projects In Progress
+- **Tableau dashboard:**  
+  https://public.tableau.com/app/profile/zambria.morris/viz/bank_churn_dashboard_17679609808390/Dashboard1  
 
-The following projects are currently being developed and will be added soon:
-	•	Healthcare Insurance Cost Analysis
-	•	HR Attrition Analysis
-	•	Retail Sales Performance
+---
 
-⸻
+## 🏥 Upcoming Project
 
-About Me
+### Healthcare Data Analysis (In Progress)
 
-I have a background in psychology and business operations, which allows me to approach data from both a human behavior and business performance perspective. My goal is to work as a data analyst helping organizations use their data to drive smarter, more profitable decisions.
+I am currently developing a healthcare-focused analytics project centered on understanding cost drivers, utilization patterns, and outcome-related insights within healthcare data.
+
+This project will demonstrate:
+- Advanced data cleaning and transformation  
+- Analytical thinking applied to complex, real-world datasets  
+- Business and operational insight generation  
+- Clear, decision-oriented data storytelling  
+
+---
+
+## 🎯 Portfolio Direction
+
+This portfolio is intentionally focused on **depth, clarity, and business relevance** rather than volume. Each project is designed to reflect how data analysts work in real organizations — from framing the problem to delivering insights that inform decisions.
+
+---
+
+## 📫 Let’s Connect
+
+- **LinkedIn:** https://www.linkedin.com/in/zambriamorris/  
+- **Tableau Public:** https://public.tableau.com/app/profile/zambria.morris  
+
+Thank you for reviewing my work.
+
