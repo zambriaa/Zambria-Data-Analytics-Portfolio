@@ -40,7 +40,7 @@ Identified customer segments with elevated churn risk and provided insights to s
   https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/tree/main/01_Bank_Customer_Churn_Analysis  
 
 - **Tableau dashboard:**  
-  https://public.tableau.com/app/profile/zambria.morris/viz/bank_churn_dashboard_17679609808390/Dashboard1  
+ https://public.tableau.com/app/profile/zambria.morris/viz/BankCustomerChurnAnalysis_17695751310670/Dashboard1
 
 ---
 
