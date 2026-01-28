@@ -60,7 +60,7 @@ This project will demonstrate:
 
 ## 🎯 Portfolio Direction
 
-This portfolio is intentionally focused on **depth, clarity, and business relevance** rather than volume. Each project is designed to reflect how data analysts work in real organizations — from framing the problem to delivering insights that inform decisions.
+This portfolio is intentionally focused on **depth, clarity, and business relevance** rather than volume. Each project is designed to reflect how data analysts work in real organizations,from framing the problem to delivering insights that inform decisions.
 
 ---
 
