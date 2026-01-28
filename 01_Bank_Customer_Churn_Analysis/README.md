@@ -73,7 +73,8 @@ This project demonstrates an end-to-end data analyst workflow: data preparation,
 
 Customers with shorter tenure churn at a significantly higher rate than long-tenured customers. The earliest stages of the customer lifecycle represent the highest retention risk, indicating that early engagement is critical for long-term retention.
 
-![Churn by Tenure](visuals/churn_by_tenure.png)
+<img width="1175" height="202" alt="Churn Rate by Tenure" src="https://github.com/user-attachments/assets/8d762178-2966-4ff7-98d8-e94e54ea4557" />
+
 
 ---
 
@@ -81,7 +82,8 @@ Customers with shorter tenure churn at a significantly higher rate than long-ten
 
 Churn behavior differs meaningfully across age groups, with certain age segments demonstrating higher churn rates than others. This suggests that demographic factors influence retention behavior and that retention strategies may benefit from age-specific targeting.
 
-![Churn by Age Group](visuals/churn_by_age_group.png)
+<img width="1173" height="231" alt="Churn Rate by Age Group" src="https://github.com/user-attachments/assets/7ef49e97-4698-4600-8c8d-76029d41a2e7" />
+
 
 ---
 
@@ -89,7 +91,8 @@ Churn behavior differs meaningfully across age groups, with certain age segments
 
 Customers in lower balance segments churn at higher rates than customers with higher balances. This pattern suggests lower engagement or perceived value among lower-balance customers, presenting an opportunity for targeted engagement strategies.
 
-![Churn by Balance Segment](visuals/churn_by_balance_segment.png)
+<img width="1146" height="218" alt="Churn Rate by Balance Segment" src="https://github.com/user-attachments/assets/29a2aa7e-40a4-4bdc-aeb6-7381c3c327ae" />
+
 
 ---
 
@@ -97,7 +100,8 @@ Customers in lower balance segments churn at higher rates than customers with hi
 
 Churn rates vary by country, indicating that regional factors such as market conditions, competition, or customer expectations influence customer retention.
 
-![Churn by Country](visuals/churn_by_country.png)
+<img width="1170" height="208" alt="Churn Rate by Country" src="https://github.com/user-attachments/assets/b7cee9aa-84af-46b3-99c0-81d57d82b11c" />
+
 
 ---
 
