@@ -72,6 +72,7 @@ This project demonstrates my ability to move from raw data → analysis → insi
 ### 1️⃣ Customer Tenure Is Strongly Associated With Churn
 
 Customers with shorter tenure exhibit higher churn rates compared to long-tenured customers. The early stages of the customer lifecycle represent the highest churn risk, indicating that early engagement is critical for retention.
+
 <img width="1175" height="202" alt="Churn Rate by Tenure" src="https://github.com/user-attachments/assets/ec2d69a5-774d-4d2e-a372-4de512f854d6" />
 
 
@@ -90,6 +91,7 @@ Churn behavior differs by age group, with certain age segments showing noticeabl
 ### 3️⃣ Balance Segment Impacts Churn Behavior
 
 Customers with lower account balances tend to churn at higher rates than customers with higher balances. This may indicate lower engagement or perceived value among lower-balance customers.
+
 <img width="1146" height="218" alt="Churn Rate by Balance Segment" src="https://github.com/user-attachments/assets/2f3e4296-a1c7-4b38-8635-ce322160aeb2" />
 
 
