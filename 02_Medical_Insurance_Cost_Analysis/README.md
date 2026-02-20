@@ -1,6 +1,8 @@
 
 # 🏥 Healthcare Cost & Risk Analysis
+
 **Tools:** Excel · SQL · Tableau
+
 **Focus:** Cost Drivers & Risk Segmentation Analytics
 
 ---
@@ -80,7 +82,8 @@ This project demonstrates a full end-to-end analytics workflow: data cleaning, s
 Smokers incur significantly higher average medical charges compared to non-smokers. Smoking status represents the most influential behavioral variable in predicting cost exposure.
 
 
-<img width="1175" height="202" alt="Average Charges by Smoker Status" src="tableau/medical_insurance_dashboard.png" />
+<img width="529" height="590" alt="image" src="https://github.com/user-attachments/assets/8d058d68-3629-40a1-8655-81f66a1c9d48" />
+
 
 
 ---
