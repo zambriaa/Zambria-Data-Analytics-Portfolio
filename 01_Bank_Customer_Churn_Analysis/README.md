@@ -1,164 +1,143 @@
-# 📊 Customer Retention & Churn Analysis  
+# 📊 Customer Retention & Churn Analysis
+
 **Tools:** Excel · SQL · Tableau  
-**Focus:** Customer Behavior & Retention Analytics  
+**Focus:** Customer Behavior & Retention Risk Analytics  
 
 ---
 
 ## 📌 Project Overview
 
-Customer churn has a direct impact on revenue, growth, and long-term business performance. Understanding which customers are most likely to leave — and why — allows organizations to prioritize retention efforts and reduce unnecessary losses.
+Customer churn directly impacts revenue, growth, and long-term profitability. Identifying high-risk customer segments allows organizations to prioritize retention strategies and reduce avoidable revenue loss.
 
-In this project, I analyzed customer-level data to identify key patterns associated with churn and to highlight high-risk customer segments. The analysis focuses on behavioral, demographic, financial, and geographic factors that influence customer retention.
-
-This project demonstrates an end-to-end data analyst workflow: data preparation, analysis, insight generation, and business-focused recommendations.
-
----
-
-## 🎯 Objectives
-
-- Identify the primary drivers of customer churn  
-- Analyze how tenure, age group, balance segment, and geography relate to churn  
-- Segment customers by churn risk  
-- Communicate insights clearly using data visualization  
-- Provide actionable, data-backed recommendations  
+This project analyzes bank customer data to quantify churn risk across age, tenure, account balance, and geography.
 
 ---
 
 ## 📊 Dataset Summary
 
 **Dataset:** Bank Customer Churn Dataset  
+**Source:** [Kaggle – Bank Customer Churn Dataset](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset)
 
-**Key Features Analyzed:**
-- Customer tenure  
-- Age group  
-- Account balance (segmented)  
+**Key Variables Analyzed:**
+- Customer Tenure  
+- Age Group  
+- Account Balance (Segmented)  
 - Country  
-- Customer demographic attributes  
-- Churn indicator  
+- Churn Indicator  
+
+**Derived Fields Created:**
+- Tenure Groups (0–3, 4–7, 8+ years)  
+- Age Groups (Under 30, 30–50, 50+)  
+- Balance Segments (High vs Low)  
 
 ---
 
-## ❓ Key Business Questions
+## 📐 Analytical Approach
 
-1. When in the customer lifecycle is churn most likely to occur?  
-2. Do churn rates differ across age groups?  
-3. How does account balance relate to churn behavior?  
-4. Are there geographic differences in churn rates?  
-5. Which customer segments should be prioritized for retention efforts?  
+- Cleaned and validated dataset in Excel  
+- Created segmentation fields for age, tenure, and balance tiers  
+- Used SQL to calculate churn rates across customer segments  
+- Compared churn percentages to identify high-risk groups  
+- Designed dashboard in Tableau  
 
 ---
 
-## 🛠 Tools & Approach
+## 📈 Tableau Dashboard
 
-### Excel
-- Data cleaning and validation  
-- Creation of derived fields such as age groups and balance segments  
-- Exploratory analysis using pivot tables  
+<img width="1187" height="625" alt="bank_churn_dashboard_top" src="https://github.com/user-attachments/assets/1868ee54-9a48-4a6c-aed1-689274e2d89d" />
+<img width="1202" height="520" alt="bank_churn_dashboard_bottom" src="https://github.com/user-attachments/assets/e453471f-916e-4f2d-abd1-76ebcedfa1b1" />
 
-### SQL
-- Segmentation of churned vs. retained customers  
-- Aggregation of churn rates by tenure, age group, balance segment, and country  
-- Identification of high-risk customer segments  
 
-### Tableau
-- Visual analysis of churn patterns  
-- Comparison of churn rates across customer segments  
-- Business-focused charts to support insight communication  
+🔗 **View Interactive Dashboard on Tableau Public:**  
+https://public.tableau.com/app/profile/zambria.morris/viz/BankCustomerChurnAnalysis_17695751310670/Dashboard1  
+
+---
+
+## 📊 Overall KPI
+
+- **Overall Churn Rate:** 20.37%
+
+Approximately 1 in 5 customers churn, representing significant revenue exposure.
 
 ---
 
 ## 🔍 Key Insights
 
-### 1️⃣ Customer Tenure Is Strongly Associated With Churn
+### 1️⃣ Age Is the Strongest Demographic Churn Driver
 
-Customers with shorter tenure churn at a significantly higher rate than long-tenured customers. The earliest stages of the customer lifecycle represent the highest retention risk, indicating that early engagement is critical for long-term retention.
+- **50+ age group:** ~45% churn rate  
+- **30–50:** ~19%  
+- **Under 30:** ~8%  
 
-<img width="1175" height="202" alt="Churn Rate by Tenure" src="https://github.com/user-attachments/assets/8d762178-2966-4ff7-98d8-e94e54ea4557" />
-
-
----
-
-### 2️⃣ Churn Rates Vary Across Age Groups
-
-Churn behavior differs meaningfully across age groups, with certain age segments demonstrating higher churn rates than others. This suggests that demographic factors influence retention behavior and that retention strategies may benefit from age-specific targeting.
-
-<img width="1173" height="231" alt="Churn Rate by Age Group" src="https://github.com/user-attachments/assets/7ef49e97-4698-4600-8c8d-76029d41a2e7" />
-
+Customers aged 50+ churn at over **5x the rate of customers under 30**, representing the highest demographic retention risk.
 
 ---
 
-### 3️⃣ Lower Balance Segments Show Higher Churn Risk
+### 2️⃣ High-Balance Customers Exhibit Elevated Churn
 
-Customers in lower balance segments churn at higher rates than customers with higher balances. This pattern suggests lower engagement or perceived value among lower-balance customers, presenting an opportunity for targeted engagement strategies.
+- **High Balance Segment:** ~24% churn  
+- **Low Balance Segment:** ~14% churn  
 
-<img width="1146" height="218" alt="Churn Rate by Balance Segment" src="https://github.com/user-attachments/assets/29a2aa7e-40a4-4bdc-aeb6-7381c3c327ae" />
-
-
----
-
-### 4️⃣ Geographic Differences Exist in Churn Rates
-
-Churn rates vary by country, indicating that regional factors such as market conditions, competition, or customer expectations influence customer retention.
-
-<img width="1170" height="208" alt="Churn Rate by Country" src="https://github.com/user-attachments/assets/b7cee9aa-84af-46b3-99c0-81d57d82b11c" />
-
+High-balance customers churn at a rate **~71% higher** than low-balance customers, signaling potential dissatisfaction among high-value accounts.
 
 ---
 
-## 💡 Recommendations
+### 3️⃣ Germany Represents a Concentrated Geographic Risk
 
-1. **Improve early customer engagement**  
-   Focus retention efforts on newer customers through structured onboarding and early engagement initiatives.
+- **Germany:** ~32% churn  
+- **Spain:** ~17%  
+- **France:** ~16%  
 
-2. **Develop segment-specific retention strategies**  
-   Tailor retention approaches based on age group and balance segment rather than using one-size-fits-all solutions.
-
-3. **Prioritize high-risk balance segments**  
-   Monitor lower-balance customers more closely and introduce initiatives to increase engagement and perceived value.
-
-4. **Investigate regional churn drivers**  
-   Use geographic churn patterns to guide localized retention strategies and deeper analysis.
+Germany’s churn rate is nearly **double that of France and Spain**, indicating regional retention challenges.
 
 ---
 
-## ✅ Results Summary
+### 4️⃣ Tenure Shows Moderate Lifecycle Risk
 
-This analysis identifies clear, actionable churn risk segments based on tenure, demographics, financial engagement, and geography. The findings highlight where targeted retention efforts would likely deliver the highest return, enabling proactive and data-driven decision-making.
+- **0–3 years:** ~21% churn  
+- **4–7 years:** ~19% churn  
+- **8+ years:** ~20% churn  
 
----
-
-## 📈 Business Value
-
-Applying these insights can help organizations:
-- Reduce customer churn through early intervention  
-- Increase customer lifetime value  
-- Allocate retention resources more effectively  
-- Strengthen data-driven retention strategies  
+Churn remains elevated across tenure groups, with slightly higher risk in early lifecycle stages.
 
 ---
 
-## 🧠 What This Project Demonstrates
+## 📈 Business Impact
 
-- Ability to analyze customer behavior using real-world data  
-- Strong understanding of churn and retention analytics  
-- Proficiency with Excel, SQL, and Tableau  
-- Clear communication of insights and business recommendations  
+This analysis quantifies measurable churn drivers that enable organizations to:
+
+- Prioritize retention efforts toward high-risk age segments  
+- Investigate churn causes among high-value (high-balance) customers  
+- Address regional retention challenges in Germany  
+- Improve customer lifetime value through targeted engagement strategies  
+
+---
+
+## 💡 Business Recommendations
+
+1. **Develop age-targeted retention strategies**, particularly for customers aged 50+.  
+2. **Investigate churn among high-value accounts** to reduce revenue leakage.  
+3. **Implement localized retention initiatives in Germany.**  
+4. **Strengthen early-stage onboarding programs** to reduce first-cycle churn.  
+
+---
+
+## 📂 Repository Structure
+
+- `/data/` → Cleaned dataset  
+- `/sql/` → Churn rate segmentation queries  
+- `/visuals/` → Dashboard screenshots  
+- `README.md` → Executive project summary  
 
 ---
 
 ## 📎 Deliverables
 
 - Cleaned and structured dataset  
-- SQL queries used for churn segmentation  
-- Visual analysis of churn patterns  
-- Business-focused insights and recommendations  
+- SQL churn-rate calculations  
+- Executive-ready Tableau dashboard  
+- Business-focused retention recommendations  
 
 ---
 
-## 🔮 Next Steps
-
-Future enhancements could include:
-- Predictive churn modeling  
-- Deeper analysis of customer activity behavior  
-- Testing targeted retention strategies  
-
+💼 This project demonstrates my ability to quantify customer churn risk and translate behavioral data into actionable retention strategies using SQL and Tableau.
