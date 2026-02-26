@@ -52,7 +52,7 @@ The objective was to determine which variables most significantly impact annual 
 ## 🧾 Technical Implementation (SQL)
 
 📂 **Full SQL File:**  
-https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/blob/main/02_Medical_Insurance_Cost_Analysis/sql/insurance_analysis.sql)
+[View bank_churn_analysis.sql](https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/blob/main/01_Bank_Customer_Churn_Analysis/sql/bank_churn_analysis.sql)
 
 The analysis was conducted using structured SQL queries in SQLite (SQLiteStudio) to calculate average medical charges, segment high-cost populations, and evaluate combined behavioral and demographic risk factors.
 
