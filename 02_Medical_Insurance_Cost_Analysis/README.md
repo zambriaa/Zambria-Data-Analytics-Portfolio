@@ -49,6 +49,91 @@ The objective was to determine which variables most significantly impact annual 
 
 ---
 
+## 🧾 Technical Implementation (SQL)
+
+📂 **Full SQL File:**  
+https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/blob/main/02_Medical_Insurance_Cost_Analysis/sql/insurance_analysis.sql)
+
+The analysis was conducted using structured SQL queries in SQLite (SQLiteStudio) to calculate average medical charges, segment high-cost populations, and evaluate combined behavioral and demographic risk factors.
+
+**Core SQL Techniques Used:**
+- COUNT() for population sizing  
+- AVG() for cost measurement  
+- ROUND() for financial precision  
+- GROUP BY for segmentation  
+- Multi-column grouping for cross-risk analysis  
+- ORDER BY for ranked comparisons  
+
+---
+
+### Sample Query — Overall Average Medical Charges
+
+```sql
+SELECT 
+    ROUND(AVG(charges), 2) AS overall_average_charges
+FROM insurance;
+```
+
+---
+
+### Sample Query — Average Charges by Smoking Status
+
+```sql
+SELECT 
+    smoker_flag,
+    COUNT(*) AS total_people,
+    ROUND(AVG(charges), 2) AS avg_charges
+FROM insurance
+GROUP BY smoker_flag
+ORDER BY avg_charges DESC;
+```
+
+---
+
+### Sample Query — Average Charges by BMI Category
+
+```sql
+SELECT 
+    bmi_category,
+    COUNT(*) AS total_people,
+    ROUND(AVG(charges), 2) AS avg_charges
+FROM insurance
+GROUP BY bmi_category
+ORDER BY avg_charges DESC;
+```
+
+---
+
+### Sample Query — Smoking Impact Within BMI Categories
+
+```sql
+SELECT 
+    smoker_flag,
+    bmi_category,
+    COUNT(*) AS total_people,
+    ROUND(AVG(charges), 2) AS avg_charges
+FROM insurance
+GROUP BY smoker_flag, bmi_category
+ORDER BY avg_charges DESC;
+```
+
+---
+
+### Sample Query — Smoking Impact Across Age Groups
+
+```sql
+SELECT 
+    age_group,
+    smoker_flag,
+    COUNT(*) AS total_people,
+    ROUND(AVG(charges), 2) AS avg_charges
+FROM insurance
+GROUP BY age_group, smoker_flag
+ORDER BY avg_charges DESC;
+```
+
+---
+
 ## 🔍 Key Insights
 
 ### 1️⃣ Smoking Is the Strongest Cost Driver
