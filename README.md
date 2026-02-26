@@ -1,73 +1,104 @@
 # Zambria Morris — Data Analytics Portfolio  
-**Data Analyst | SQL • Excel • Tableau**
+**Data Analyst | SQL • Excel • Tableau | Risk & Customer Analytics**
 
 ---
 
 ## 👩🏽‍💻 About Me
 
-I am a data analyst focused on transforming raw data into clear, actionable insights that support business decision-making. My work centers on understanding customer and operational behavior, identifying risk and opportunity, and communicating findings in a way that stakeholders can act on.
+I am a data analyst focused on translating raw data into measurable business insights. My work centers on identifying risk patterns, quantifying performance drivers, and delivering executive-ready dashboards that support strategic decision-making.
 
-I specialize in building clean datasets, writing analytical SQL, and delivering visual dashboards that support measurable business outcomes.
+I specialize in segmentation analysis, churn and retention modeling, and financial risk analytics using SQL, Excel, and Tableau.
 
 ---
 
-## 🛠 Tools & Skills
+## 🛠 Tools & Core Skills
 
-- **SQL:** data cleaning, joins, aggregations, CTEs  
-- **Excel:** data preparation, validation, formulas, exploratory analysis  
-- **Tableau:** dashboards, KPI tracking, data storytelling  
-- **Analytics Focus:** segmentation, retention analysis, performance insights  
+**SQL**
+- Data cleaning & transformation  
+- Aggregations & segmentation logic  
+- CTEs & structured analytical queries  
+
+**Excel**
+- Data validation & preprocessing  
+- Feature engineering  
+- Exploratory analysis  
+
+**Tableau**
+- Executive dashboards  
+- KPI visualization  
+- Risk & performance storytelling  
+
+**Analytics Focus**
+- Customer retention & churn analysis  
+- Cost-driver analysis  
+- Risk segmentation  
+- Business performance insights  
 
 ---
 
 ## 📁 Projects
 
-### Bank Customer Churn Analysis
+---
 
-**Business context**  
-Customer churn directly impacts revenue and long-term growth. This project analyzes customer behavior to identify churn risk and the factors that contribute to customer attrition.
+### 📊 Bank Customer Churn Analysis  
+**Focus:** Retention Risk & Customer Segmentation  
 
-**Work performed**
-- Cleaned and prepared customer data using Excel and SQL  
-- Analyzed churn drivers including tenure, age group, balance segment, and geography  
-- Built a Tableau dashboard to visualize churn patterns and high-risk customer segments  
+**Business Context**  
+Customer churn directly impacts revenue and lifetime value. This project analyzes banking customer data to quantify churn risk and identify high-impact retention opportunities.
 
-**Key outcome**  
-Identified customer segments with elevated churn risk and provided insights to support targeted retention strategies.
+**Key Insights**
+- Overall churn rate: **20.37% (1 in 5 customers)**  
+- Customers aged **50+ churn at ~45%**, over **5x higher** than customers under 30  
+- High-balance customers churn at **24%**, ~71% higher than low-balance segments  
+- Germany exhibits a **32% churn rate**, nearly double France and Spain  
 
-**Project links**
-- **GitHub files:**  
+**Impact**
+Identified high-risk customer segments and provided data-backed recommendations to improve retention strategy and reduce revenue leakage.
+
+**Project Links**
+- GitHub:  
   https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/tree/main/01_Bank_Customer_Churn_Analysis  
-
-- **Tableau dashboard:**  
- https://public.tableau.com/app/profile/zambria.morris/viz/BankCustomerChurnAnalysis_17695751310670/Dashboard1
-
----
-
-## 🏥 Upcoming Project
-
-### Healthcare Data Analysis (In Progress)
-
-I am currently developing a healthcare-focused analytics project centered on understanding cost drivers, utilization patterns, and outcome-related insights within healthcare data.
-
-This project will demonstrate:
-- Advanced data cleaning and transformation  
-- Analytical thinking applied to complex, real-world datasets  
-- Business and operational insight generation  
-- Clear, decision-oriented data storytelling  
+- Tableau Dashboard:  
+  https://public.tableau.com/app/profile/zambria.morris/viz/BankCustomerChurnAnalysis_17695751310670/Dashboard1  
 
 ---
 
-## 🎯 Portfolio Direction
+### 🏥 Healthcare Cost & Risk Analysis  
+**Focus:** Cost Drivers & Underwriting Risk  
 
-This portfolio is intentionally focused on **depth, clarity, and business relevance** rather than volume. Each project is designed to reflect how data analysts work in real organizations,from framing the problem to delivering insights that inform decisions.
+**Business Context**  
+Understanding healthcare cost drivers improves pricing accuracy and risk segmentation in insurance underwriting.
+
+**Key Insights**
+- Smokers incur **$32,050 average annual charges**, ~**3.8x higher** than non-smokers  
+- Insurance costs increase **131% from ages 18–29 to 60+**  
+- Obese individuals incur **49% higher costs** than normal BMI  
+- High-risk segments (obese smokers 60+) exceed **$40K annually**  
+
+**Impact**
+Quantified dominant cost drivers and identified high-exposure risk segments to support data-driven underwriting strategy.
+
+**Project Links**
+- GitHub:  
+  https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/tree/main/02_Medical_Insurance_Cost_Analysis  
+- Tableau Dashboard:  
+  https://public.tableau.com/app/profile/zambria.morris/viz/MedicalInsuranceCostDriversAnalysis/Dashboard1  
 
 ---
 
-## 📫 Let’s Connect
+## 🎯 Portfolio Focus
 
-- **LinkedIn:** https://www.linkedin.com/in/zambriamorris/  
-- **Tableau Public:** https://public.tableau.com/app/profile/zambria.morris  
+This portfolio emphasizes **depth over volume**, with each project designed to reflect real-world analyst workflows:
+
+Problem framing → Data preparation → Segmentation analysis → Quantified insights → Business recommendations.
+
+The goal is not just to analyze data, but to deliver insights that influence decisions.
+
+---
+
+## 📫 Connect With Me
+
+- LinkedIn: https://www.linkedin.com/in/zambriamorris/  
+- Tableau Public: https://public.tableau.com/app/profile/zambria.morris  
 
 Thank you for reviewing my work.
-
