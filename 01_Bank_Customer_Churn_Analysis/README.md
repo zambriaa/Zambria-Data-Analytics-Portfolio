@@ -42,6 +42,83 @@ This project analyzes bank customer data to quantify churn risk across age, tenu
 
 ---
 
+
+## 🧾 Technical Implementation (SQL)
+
+📂 **Full SQL File:**  
+[View bank_churn_analysis.sql](https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/blob/main/01_Bank_Customer_Churn_Analysis/sql/bank_churn_analysis.sql)
+
+The churn analysis was conducted using structured SQL queries in SQLite (DB Browser for SQLite) to calculate churn rates, segment high-risk customer populations, and identify demographic and financial drivers of customer attrition.
+
+**Core SQL Techniques Used:**
+- COUNT() for customer population sizing  
+- SUM() for churned customer totals  
+- AVG() for churn rate calculation  
+- ROUND() for percentage precision  
+- GROUP BY for segmentation  
+- HAVING for high-risk filtering  
+- ORDER BY for ranked churn comparisons  
+
+---
+
+### Sample Query — Overall Churn Rate
+
+```sql
+SELECT
+    ROUND(AVG(churn) * 100, 2) AS churn_rate_percent
+FROM bank_churn;
+```
+
+---
+
+### Sample Query — Churn Rate by Country
+
+```sql
+SELECT
+    country,
+    COUNT(*) AS total_customers,
+    SUM(churn) AS churned_customers,
+    ROUND(AVG(churn) * 100, 2) AS churn_rate_percent
+FROM bank_churn
+GROUP BY country
+ORDER BY churn_rate_percent DESC;
+```
+
+---
+
+### Sample Query — Churn Rate by Balance Segment
+
+```sql
+SELECT
+    balance_flag,
+    COUNT(*) AS total_customers,
+    SUM(churn) AS churned_customers,
+    ROUND(AVG(churn) * 100, 2) AS churn_rate_percent
+FROM bank_churn
+GROUP BY balance_flag
+ORDER BY churn_rate_percent DESC;
+```
+
+---
+
+### Sample Query — Identify High-Risk Churn Segments
+
+```sql
+SELECT
+    country,
+    tenure_group,
+    balance_flag,
+    age_group,
+    COUNT(*) AS customers,
+    ROUND(AVG(churn) * 100, 2) AS churn_rate_percent
+FROM bank_churn
+GROUP BY country, tenure_group, balance_flag, age_group
+HAVING churn_rate_percent > 30
+ORDER BY churn_rate_percent DESC;
+```
+
+---
+
 ## 📈 Tableau Dashboard
 
 <img width="1187" height="625" alt="bank_churn_dashboard_top" src="https://github.com/user-attachments/assets/1868ee54-9a48-4a6c-aed1-689274e2d89d" />
