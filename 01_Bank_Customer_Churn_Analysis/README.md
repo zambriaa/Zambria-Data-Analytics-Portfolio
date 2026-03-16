@@ -34,6 +34,10 @@ The analysis shows that some customer groups are much more likely to leave than 
 **Source:**  
 https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset
 
+The full dataset contains **10,000+ customer records** including age, tenure, balance, country, and churn status.
+
+**Note:** A smaller sample of the dataset is included in this repository so the data can be previewed easily on GitHub.
+
 **Fields I worked with:**
 
 - Customer tenure  
