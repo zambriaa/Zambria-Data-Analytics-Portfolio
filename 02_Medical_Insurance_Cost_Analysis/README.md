@@ -1,132 +1,121 @@
-# 🏥 Healthcare Cost & Risk Analysis
+# Healthcare Cost & Risk Analysis
 
-**Tools:** Excel · SQL · Tableau  
-**Focus:** Cost Drivers & Risk Segmentation Analytics  
-
----
-
-## 📌 Project Overview
-
-This project analyzes medical insurance data to identify the strongest drivers of healthcare costs and quantify financial risk exposure across demographic and behavioral segments.
-
-The objective was to determine which variables most significantly impact annual medical charges and translate those findings into business-focused pricing and underwriting insights.
+SQL • Excel • Tableau
 
 ---
 
-## 📊 Dataset Summary
+<img width="529" height="590" alt="Healthcare Cost Dashboard" src="https://github.com/user-attachments/assets/8d058d68-3629-40a1-8655-81f66a1c9d48" />
 
-**Dataset:** Medical Insurance Cost Dataset  
-**Source:** [Kaggle – Medical Insurance Cost Dataset](https://www.kaggle.com/datasets/mosapabdelghany/medical-insurance-cost-dataset)
+**Live Dashboard:**  
+https://public.tableau.com/app/profile/zambria.morris/viz/MedicalInsuranceCostDriversAnalysis/Dashboard1
 
-**Variables Analyzed:**
+---
+
+**Project Goal**
+
+The goal of this project was to understand what actually drives healthcare costs. We often hear that factors like age or smoking increase insurance expenses, but I wanted to see how large those differences actually are and what happens when multiple risk factors stack together.
+
+Using a medical insurance dataset from Kaggle, I analyzed how age, BMI, smoking status, and region relate to annual medical charges.
+
+---
+
+**Executive Summary**
+
+Healthcare costs vary significantly depending on individual health factors. In this project, I analyzed a medical insurance dataset to see how age, BMI, and smoking status impact annual medical charges.
+
+The analysis showed that smoking is the largest cost driver in the dataset. Age also increases healthcare expenses, while BMI plays a moderate role on its own but becomes more important when combined with other risk factors.
+
+The biggest differences appeared when multiple risk factors were combined, especially among older smokers and obese smokers.
+
+---
+
+**Dataset**
+
+**Source:** https://www.kaggle.com/datasets/mirichoi0218/insurance
+
+**Fields I worked with**
+
 - Age  
 - BMI  
-- Smoking Status  
+- Smoking status  
 - Region  
-- Annual Medical Charges  
+- Annual medical charges  
 
-**Derived Fields Created:**
-- Age Groups (18–29, 30–44, 45–59, 60+)  
-- BMI Categories (Underweight, Normal, Overweight, Obese)
+**Fields I created**
 
----
-
-## 📐 Analytical Approach
-
-- Cleaned and validated dataset in Excel  
-- Created segmentation variables for age and BMI  
-- Used SQL to calculate average charges across segments  
-- Quantified cost differences using percentage change and cost multiples  
-- Built an executive-ready dashboard in Tableau  
+- Age groups (18–29, 30–44, 45–59, 60+)  
+- BMI categories (Underweight, Normal, Overweight, Obese)
 
 ---
 
-## 📈 Tableau Dashboard
+**How I Approached the Analysis**
 
-<img width="529" height="590" alt="image" src="https://github.com/user-attachments/assets/8d058d68-3629-40a1-8655-81f66a1c9d48" />
-
-🔗 **Live Dashboard:** https://public.tableau.com/app/profile/zambria.morris/viz/MedicalInsuranceCostDriversAnalysis/Dashboard1
-
----
-
-## 🧾 Technical Implementation (SQL)
-
-📂 **Full SQL File:**  
-[View insurance_analysis.sql](./sql/insurance_analysis.sql)
-
-The analysis was conducted using structured SQL queries in SQLite (SQLiteStudio) to calculate average medical charges, segment high-cost populations, and evaluate combined behavioral and demographic risk factors.
-
-**Core SQL Techniques Used:**
-- COUNT() for population sizing  
-- AVG() for cost measurement  
-- ROUND() for financial precision  
-- GROUP BY for segmentation  
-- Multi-column grouping for cross-risk analysis  
-- ORDER BY for ranked comparisons  
+- Cleaned and validated the dataset in Excel  
+- Built age group and BMI category fields  
+- Wrote SQL queries in SQLite to calculate average charges across different segments  
+- Stacked variables to see what happens when risk factors combine  
+- Built a Tableau dashboard to visualize the findings  
 
 ---
 
-### Sample Query — Overall Average Medical Charges
+**SQL Queries**
+
+Full file:  
+`/sql/insurance_analysis.sql`
+
+**Overall Average Charges**
 
 ```sql
 SELECT 
-    ROUND(AVG(charges), 2) AS overall_average_charges
+ROUND(AVG(charges), 2) AS overall_average_charges
 FROM insurance;
 ```
 
----
-
-### Sample Query — Average Charges by Smoking Status
+**Charges by Smoking Status**
 
 ```sql
 SELECT 
-    smoker_flag,
-    COUNT(*) AS total_people,
-    ROUND(AVG(charges), 2) AS avg_charges
+smoker_flag,
+COUNT(*) AS total_people,
+ROUND(AVG(charges), 2) AS avg_charges
 FROM insurance
 GROUP BY smoker_flag
 ORDER BY avg_charges DESC;
 ```
 
----
-
-### Sample Query — Average Charges by BMI Category
+**Charges by BMI Category**
 
 ```sql
 SELECT 
-    bmi_category,
-    COUNT(*) AS total_people,
-    ROUND(AVG(charges), 2) AS avg_charges
+bmi_category,
+COUNT(*) AS total_people,
+ROUND(AVG(charges), 2) AS avg_charges
 FROM insurance
 GROUP BY bmi_category
 ORDER BY avg_charges DESC;
 ```
 
----
-
-### Sample Query — Smoking Impact Within BMI Categories
+**Smoking Impact Within BMI Categories**
 
 ```sql
 SELECT 
-    smoker_flag,
-    bmi_category,
-    COUNT(*) AS total_people,
-    ROUND(AVG(charges), 2) AS avg_charges
+smoker_flag,
+bmi_category,
+COUNT(*) AS total_people,
+ROUND(AVG(charges), 2) AS avg_charges
 FROM insurance
 GROUP BY smoker_flag, bmi_category
 ORDER BY avg_charges DESC;
 ```
 
----
-
-### Sample Query — Smoking Impact Across Age Groups
+**Smoking Impact Across Age Groups**
 
 ```sql
 SELECT 
-    age_group,
-    smoker_flag,
-    COUNT(*) AS total_people,
-    ROUND(AVG(charges), 2) AS avg_charges
+age_group,
+smoker_flag,
+COUNT(*) AS total_people,
+ROUND(AVG(charges), 2) AS avg_charges
 FROM insurance
 GROUP BY age_group, smoker_flag
 ORDER BY avg_charges DESC;
@@ -134,79 +123,49 @@ ORDER BY avg_charges DESC;
 
 ---
 
-## 🔍 Key Insights
+**Key Findings**
 
-### 1️⃣ Smoking Is the Strongest Cost Driver
+Smoking was by far the biggest cost driver. Smokers averaged **$32,050 a year compared to $8,434 for non-smokers**, about **3.8x higher**.
 
-- **Average Smoker Charges:** $32,050  
-- **Average Non-Smoker Charges:** $8,434  
-- Smokers pay **$23,616 more annually**  
-- This represents a **3.8x increase (~280% higher costs)**  
+Costs increased steadily with age, from **$9,182 for the 18–29 group** to **$21,248 for individuals aged 60+**, representing about a **131% increase**.
 
-Smoking status is the dominant behavioral predictor of cost exposure.
+BMI increased costs but wasn’t as significant on its own. Individuals in the obese category averaged **$15,552 annually**, about **49% more than the normal BMI group**.
 
----
+The largest differences appeared when risk factors were combined. **Obese smokers averaged $41,558 per year**, while **smokers aged 60+ averaged $40,631**.
 
-### 2️⃣ Insurance Charges Increase With Age
-
-- **18–29:** $9,182  
-- **30–44:** $12,491  
-- **45–59:** $15,923  
-- **60+:** $21,248  
-
-Costs increase by **131% from youngest to oldest age group**, demonstrating compounding financial risk.
+The lowest risk group averaged **$5,533**, meaning the gap between low and high risk individuals was more than **7x**.
 
 ---
 
-### 3️⃣ Higher BMI Amplifies Financial Risk
+**Business Impact**
 
-- **Obese individuals:** $15,552 average annual charges  
-- Nearly **49% higher than normal BMI**  
-- $6,700 more than underweight individuals  
+Understanding how smoking, BMI, and age interact helps identify which groups are most likely to generate higher healthcare costs.
 
-BMI functions as a measurable cost escalator.
+For insurers and healthcare organizations, identifying these high-risk segments can improve pricing models, risk forecasting, and preventative health initiatives.
 
 ---
 
-### 4️⃣ Highest Risk Segment Identified
+**Recommendations**
 
-- **Smokers aged 60+:** $40,631  
-- **Obese smokers:** $41,558  
-- **Low-risk segment:** $5,533  
+Based on the analysis, a few practical actions could help manage healthcare costs:
 
-High-risk individuals incur **over 7x higher costs** than low-risk individuals.
-
----
-
-## 📈 Business Impact
-
-This analysis quantifies measurable cost drivers affecting underwriting and pricing strategy.
-
-Organizations can leverage these insights to:
-
-- Improve premium pricing precision  
-- Strengthen actuarial forecasting  
-- Reduce exposure to high-cost segments  
-- Prioritize preventative health initiatives  
+- Focus preventative health programs on smoking cessation since smoking had the strongest relationship with higher medical expenses.
+- Monitor high-risk groups such as older smokers and obese smokers who showed the highest average charges.
+- Use segmentation models (age groups, BMI categories, smoking status) when forecasting healthcare costs or building pricing models.
 
 ---
 
-## 📂 Repository Structure
+**Repository Structure**
 
-- `/data/` → Cleaned dataset  
-- `/sql/` → Cost segmentation queries  
-- `/visuals/` → Dashboard screenshots  
-- `README.md` → Executive project summary  
+```
+data/
+cleaned dataset
 
----
+sql/
+insurance_analysis.sql
 
-## 📎 Deliverables
+visuals/
+dashboard screenshots
 
-- Cleaned dataset  
-- SQL segmentation queries  
-- Executive-ready Tableau dashboard  
-- Data-backed pricing recommendations  
-
----
-
-💼 This project demonstrates my ability to translate healthcare data into structured risk insights using SQL and Tableau.
+README.md
+```
