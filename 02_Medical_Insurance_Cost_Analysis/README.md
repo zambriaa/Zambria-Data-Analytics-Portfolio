@@ -148,6 +148,9 @@ For insurers and healthcare organizations, identifying these high-risk segments 
 
 **Recommendations:**
 
-- Focus preventative health programs on smoking cessation since smoking had the strongest relationship with higher medical expenses.
-- Monitor high-risk groups such as older smokers and obese smokers who showed the highest average charges.
-- Use segmentation models (age groups, BMI categories, smoking status) when forecasting healthcare costs or building pricing models.
+- Focus on smoking cessation programs, since smoking had the strongest link to higher healthcare costs in the dataset.
+- Pay closer attention to higher-risk groups like older smokers and obese smokers, since they showed the highest average medical charges.
+- Use simple segmentation like age groups, BMI categories, and smoking status when estimating healthcare costs or setting insurance pricing.
+
+
+
