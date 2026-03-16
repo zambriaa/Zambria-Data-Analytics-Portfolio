@@ -1,38 +1,24 @@
-# Zambria Morris — Data Analytics Portfolio  
-**Data Analyst | SQL • Excel • Tableau | Risk & Customer Analytics**
+# Zambria Morris — Data Analytics Portfolio
+
+**SQL • Excel • Tableau**
 
 ---
 
 ## 👩🏽‍💻 About Me
 
-I am a data analyst focused on translating raw data into measurable business insights. My work centers on identifying risk patterns, quantifying performance drivers, and delivering executive-ready dashboards that support strategic decision-making.
+I'm Zambria, a data analyst based in Augusta, GA. My background is in insurance claims, benefits data, and operational reporting — so most of my project work reflects what I actually find interesting: understanding risk, customer behavior, and what the numbers are really saying underneath the surface.
 
-I specialize in segmentation analysis, churn and retention modeling, and financial risk analytics using SQL, Excel, and Tableau.
+I built this portfolio while going through my data analytics certification and have kept adding to it since. I'm comfortable in SQL, Excel, and Tableau and I'm always working on something new.
 
 ---
 
-## 🛠 Tools & Core Skills
+## 🛠 Tools I Work With
 
-**SQL**
-- Data cleaning & transformation  
-- Aggregations & segmentation logic  
-- CTEs & structured analytical queries  
+**SQL** — writing queries to clean data, segment customers, and answer specific business questions
 
-**Excel**
-- Data validation & preprocessing  
-- Feature engineering  
-- Exploratory analysis  
+**Excel** — pivot tables, formulas, data validation, and building out reporting from scratch
 
-**Tableau**
-- Executive dashboards  
-- KPI visualization  
-- Risk & performance storytelling  
-
-**Analytics Focus**
-- Customer retention & churn analysis  
-- Cost-driver analysis  
-- Risk segmentation  
-- Business performance insights  
+**Tableau** — dashboards built for people who don't want to look at raw data
 
 ---
 
@@ -40,65 +26,46 @@ I specialize in segmentation analysis, churn and retention modeling, and financi
 
 ---
 
-### 📊 Bank Customer Churn Analysis  
-**Focus:** Retention Risk & Customer Segmentation  
+### 📊 Bank Customer Churn Analysis
 
-**Business Context**  
-Customer churn directly impacts revenue and lifetime value. This project analyzes banking customer data to quantify churn risk and identify high-impact retention opportunities.
+**SQL • Excel • Tableau**
 
-**Key Insights**
-- Overall churn rate: **20.37% (1 in 5 customers)**  
-- Customers aged **50+ churn at ~45%**, over **5x higher** than customers under 30  
-- High-balance customers churn at **24%**, ~71% higher than low-balance segments  
-- Germany exhibits a **32% churn rate**, nearly double France and Spain  
+I wanted to understand what actually drives customers to leave a bank — not just that they left, but who specifically and why. I worked through 10,000+ customer records and the results were more interesting than I expected.
 
-**Impact**
-Identified high-risk customer segments and provided data-backed recommendations to improve retention strategy and reduce revenue leakage.
+**What I found:**
+- Overall churn rate came out to 20.37% — about 1 in 5 customers
+- Customers 50 and older churn at around 45%, which is more than 5x higher than customers under 30
+- High-balance customers churn at 24%, which is actually higher than low-balance customers — that one surprised me
+- Germany had a 32% churn rate, nearly double France and Spain
 
-**Project Links**
-- GitHub:  
-  https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/tree/main/01_Bank_Customer_Churn_Analysis  
-- Tableau Dashboard:  
-  https://public.tableau.com/app/profile/zambria.morris/viz/BankCustomerChurnAnalysis_17695751310670/Dashboard1  
+The Tableau dashboard I built shows all of this broken down so someone could look at it and immediately know where to focus retention efforts.
+
+[View on GitHub](https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/tree/main/01_Bank_Customer_Churn_Analysis)
+[View Tableau Dashboard](https://public.tableau.com/app/profile/zambria.morris/viz/BankCustomerChurnAnalysis_17695751310670/Dashboard1)
 
 ---
 
-### 🏥 Healthcare Cost & Risk Analysis  
-**Focus:** Cost Drivers & Underwriting Risk  
+### 🏥 Healthcare Cost & Risk Analysis
 
-**Business Context**  
-Understanding healthcare cost drivers improves pricing accuracy and risk segmentation in insurance underwriting.
+**SQL • Excel • Tableau**
 
-**Key Insights**
-- Smokers incur **$32,050 average annual charges**, ~**3.8x higher** than non-smokers  
-- Insurance costs increase **131% from ages 18–29 to 60+**  
-- Obese individuals incur **49% higher costs** than normal BMI  
-- High-risk segments (obese smokers 60+) exceed **$40K annually**  
+This one came from curiosity about what actually makes healthcare costs go up. I analyzed a medical insurance dataset looking at demographics, smoking status, BMI, and age to figure out where the real cost exposure sits.
 
-**Impact**
-Quantified dominant cost drivers and identified high-exposure risk segments to support data-driven underwriting strategy.
+**What I found:**
+- Smokers average $32,050 a year in charges — about 3.8x more than non-smokers
+- Costs go up 131% from the 18–29 age group to the 60+ group
+- Obese patients run about 49% higher costs than people with a normal BMI
+- When you stack the risk factors — obese, smoker, over 60 — you're looking at $40K+ annually
 
-**Project Links**
-- GitHub:  
-  https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/tree/main/02_Medical_Insurance_Cost_Analysis  
-- Tableau Dashboard:  
-  https://public.tableau.com/app/profile/zambria.morris/viz/MedicalInsuranceCostDriversAnalysis/Dashboard1  
+Built a Tableau dashboard showing the risk segments and cost drivers in a way that makes sense for an insurance or underwriting team.
+
+[View on GitHub](https://github.com/zambriaa/Zambria-Data-Analytics-Portfolio/tree/main/02_Medical_Insurance_Cost_Analysis)
+[View Tableau Dashboard](https://public.tableau.com/app/profile/zambria.morris/viz/MedicalInsuranceCostDriversAnalysis/Dashboard1)
 
 ---
 
-## 🎯 Portfolio Focus
+## 📫 Let's Connect
 
-This portfolio emphasizes **depth over volume**, with each project designed to reflect real-world analyst workflows:
+- LinkedIn: [linkedin.com/in/zambriamorris](https://www.linkedin.com/in/zambriamorris/)
+- Tableau Public: [public.tableau.com/app/profile/zambria.morris](https://public.tableau.com/app/profile/zambria.morris)
 
-Problem framing → Data preparation → Segmentation analysis → Quantified insights → Business recommendations.
-
-The goal is not just to analyze data, but to deliver insights that influence decisions.
-
----
-
-## 📫 Connect With Me
-
-- LinkedIn: https://www.linkedin.com/in/zambriamorris/  
-- Tableau Public: https://public.tableau.com/app/profile/zambria.morris  
-
-Thank you for reviewing my work.
