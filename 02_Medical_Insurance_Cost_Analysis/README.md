@@ -11,7 +11,7 @@ https://public.tableau.com/app/profile/zambria.morris/viz/MedicalInsuranceCostDr
 
 ---
 
-**Project Goal**
+**Project Goal:**
 
 The goal of this project was to understand what actually drives healthcare costs. We often hear that factors like age or smoking increase insurance expenses, but I wanted to see how large those differences actually are and what happens when multiple risk factors stack together.
 
@@ -19,9 +19,9 @@ Using a medical insurance dataset from Kaggle, I analyzed how age, BMI, smoking 
 
 ---
 
-**Executive Summary**
+**Executive Summary:**
 
-Healthcare costs vary significantly depending on individual health factors. In this project, I analyzed a medical insurance dataset to see how age, BMI, and smoking status impact annual medical charges.
+Healthcare costs vary depending on individual health factors. In this project, I analyzed a medical insurance dataset to see how age, BMI, and smoking status impact annual medical charges.
 
 The analysis showed that smoking is the largest cost driver in the dataset. Age also increases healthcare expenses, while BMI plays a moderate role on its own but becomes more important when combined with other risk factors.
 
@@ -29,11 +29,12 @@ The biggest differences appeared when multiple risk factors were combined, espec
 
 ---
 
-**Dataset**
+**Dataset:**
 
-**Source:** https://www.kaggle.com/datasets/mirichoi0218/insurance
+**Source:**  
+https://www.kaggle.com/datasets/mirichoi0218/insurance
 
-**Fields I worked with**
+**Fields analyzed:**
 
 - Age  
 - BMI  
@@ -41,24 +42,24 @@ The biggest differences appeared when multiple risk factors were combined, espec
 - Region  
 - Annual medical charges  
 
-**Fields I created**
+**Fields created:**
 
 - Age groups (18–29, 30–44, 45–59, 60+)  
 - BMI categories (Underweight, Normal, Overweight, Obese)
 
 ---
 
-**How I Approached the Analysis**
+**How I Approached the Analysis:**
 
 - Cleaned and validated the dataset in Excel  
-- Built age group and BMI category fields  
+- Created age group and BMI category fields  
 - Wrote SQL queries in SQLite to calculate average charges across different segments  
-- Stacked variables to see what happens when risk factors combine  
+- Combined variables to see how risk factors interact  
 - Built a Tableau dashboard to visualize the findings  
 
 ---
 
-**SQL Queries**
+**SQL Queries:**
 
 Full file:  
 `/sql/insurance_analysis.sql`
@@ -123,7 +124,7 @@ ORDER BY avg_charges DESC;
 
 ---
 
-**Key Findings**
+**Key Findings:**
 
 Smoking was by far the biggest cost driver. Smokers averaged **$32,050 a year compared to $8,434 for non-smokers**, about **3.8x higher**.
 
@@ -137,7 +138,7 @@ The lowest risk group averaged **$5,533**, meaning the gap between low and high 
 
 ---
 
-**Business Impact**
+**Business Impact:**
 
 Understanding how smoking, BMI, and age interact helps identify which groups are most likely to generate higher healthcare costs.
 
@@ -145,12 +146,8 @@ For insurers and healthcare organizations, identifying these high-risk segments 
 
 ---
 
-**Recommendations**
-
-Based on the analysis, a few practical actions could help manage healthcare costs:
+**Recommendations:**
 
 - Focus preventative health programs on smoking cessation since smoking had the strongest relationship with higher medical expenses.
 - Monitor high-risk groups such as older smokers and obese smokers who showed the highest average charges.
 - Use segmentation models (age groups, BMI categories, smoking status) when forecasting healthcare costs or building pricing models.
-
----
