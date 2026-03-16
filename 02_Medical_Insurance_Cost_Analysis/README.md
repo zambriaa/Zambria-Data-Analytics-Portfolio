@@ -154,18 +154,3 @@ Based on the analysis, a few practical actions could help manage healthcare cost
 - Use segmentation models (age groups, BMI categories, smoking status) when forecasting healthcare costs or building pricing models.
 
 ---
-
-**Repository Structure**
-
-```
-data/
-cleaned dataset
-
-sql/
-insurance_analysis.sql
-
-visuals/
-dashboard screenshots
-
-README.md
-```
