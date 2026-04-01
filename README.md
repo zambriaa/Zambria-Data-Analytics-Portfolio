@@ -6,7 +6,7 @@ SQL • Excel • Tableau
 
 ## 👩🏽‍💻 About Me
 
-I'm Zambria, a data analyst based in Augusta, GA. My background is in insurance claims, benefits data, and operational reporting. Most of my work focuses on analyzing risk, customer behavior, and operational data to understand what is actually driving outcomes.
+I'm Zambria Morris, a data analyst based in Augusta, GA. My background is in insurance claims, benefits data, and operational reporting. Most of my work focuses on analyzing risk, customer behavior, and operational data to understand what is actually driving outcomes.
 
 I built this portfolio while completing my data analytics certification and have continued adding projects since then. I work primarily in SQL, Excel, and Tableau to analyze datasets and present the results in a clear way.
 
