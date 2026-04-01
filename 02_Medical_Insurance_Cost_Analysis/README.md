@@ -32,7 +32,7 @@ The biggest differences appeared when multiple risk factors were combined, espec
 **Dataset:**
 
 **Source:**  
-https://www.kaggle.com/datasets/mirichoi0218/insurance
+https://www.kaggle.com/datasets/mosapabdelghany/medical-insurance-cost-dataset
 
 **Fields analyzed:**
 
